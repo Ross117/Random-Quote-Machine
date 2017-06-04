@@ -1,0 +1,26 @@
+body {
+  font-family: 'Montaga', sans-serif;
+}
+
+.quoteMarks {
+  font-size: 45px;
+}
+
+.quote {
+}
+
+.citation {
+  font-style: italic;
+}
+
+.newQuote {
+  margin: 10px;
+}
+
+.tweetQuote {
+  margin: 10px;
+}
+
+.attribution {
+  font-style: italic;
+}

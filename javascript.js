@@ -4,6 +4,9 @@ $(".newQuote").on("click", function () {
   var $quoteInput = $(".quote"),
     $citationInput = $(".citation");
 
+
+  // filter out quotes over 140 chrs?
+
     // make an API request to get a randomly generated quote
   $.ajax({
     url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
@@ -39,6 +42,7 @@ $(".tweetQuote").on("click", function () {
   $quote = $(".quote").text();
   defaultMsg = "Click the button to get a quote!";
 
+  // validate that quote can be tweeted
   if ($quote === "" || $quote === defaultMsg) return;
   if ($quote.length > 140) return alert("Sorry, this quote is too long to tweet.");
 
