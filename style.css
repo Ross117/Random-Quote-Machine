@@ -2,7 +2,8 @@ body {
   font-family: 'Montaga', sans-serif;
 }
 
-.quote {
+.quoteContainer {
+  top: 50px;
 }
 
 .citation {

@@ -13,26 +13,29 @@
 
   <div class="container-fluid">
 
-    <!--center quote + citation-->
-    <div class="row">
-      <h1 class="quote">Click the button to get a quote about design!</h1>
+    <div class="col quoteContainer">
+
+      <div class="row">
+        <div class="col">
+          <h1 class="quote text-center">Click the button to get a quote about design!</h1>
+          <h2 class="citation text-center"></h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="mx-auto">
+          <button type="button" class="newQuote btn btn-primary">Get new quote</button>
+          <button type="button" class="tweetQuote btn btn-info" disabled><i class="fa fa-twitter"></i>Tweet this quote</button>
+        </div>
+      </div>
+
+      <div>
+        <p class="attribution text-center">Quotes provided by https://quotesondesign.com</p>
+      </div>
+
     </div>
 
-    <div class="row">
-      <h2 class="citation"></h2>
-    </div>
-
-    <div class="row">
-        <!--stop buttons moving in response to new quotes?-->
-      <button type="button" class="newQuote btn btn-primary">Get new quote</button>
-      <button type="button" class="tweetQuote btn btn-info" disabled><i class="fa fa-twitter"></i>Tweet this quote</button>
-    </div>
-
-    <div>
-      <p class="attribution">Quotes provided by https://quotesondesign.com</p>
-    </div>
-
-  </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="javascript.js"></script>
