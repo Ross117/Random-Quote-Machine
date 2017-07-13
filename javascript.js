@@ -60,6 +60,6 @@ function getTweet () {
 
   if ($quote === "" || $quote === defaultMsg) return false;
 
-  return '"' + $quote.trim() + '" ' + $citation;
+  return encodeURIComponent('"' + $quote.trim() + '" ' + $citation);
 
 }
