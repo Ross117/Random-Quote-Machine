@@ -6,11 +6,11 @@ $(".newQuote").on("click", () => {
 
   // make an API request to get a randomly generated quote
   $.ajax({
-    url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
+    url: "https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand",
     // call function if request succeeds
     success: (json) => {
-      const quote = json[0].content;
-      const author = json[0].title;
+      const quote = json[0].content.rendered;
+      const author = json[0].title.rendered;
 
       $quoteInput.html(quote);
       $citationInput.html(author);
